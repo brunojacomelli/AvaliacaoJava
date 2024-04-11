@@ -25,14 +25,17 @@ public class Festival {
 		Artista rhcp = new Banda("Red Hot Chilli Pepper", Genero.ROCK, 200000);		
 		Artista eden = new Cantor("EDEN", Genero.ELETRO, 20000);		
 		Artista alok = new DJ("Alok", Genero.ELETRO, 100000);
+		Artista polyphia = new Banda("Polyphia", Genero.ROCK, 50000);
 		
 		Evento evento1 = new Evento(LocalDate.of(2024, 04, 25), LocalTime.of(22, 00), alok);
 		Evento evento2 = new Evento(LocalDate.of(2024, 04, 25), LocalTime.of(22, 00), eden);
-		Evento evento3 = new Evento(LocalDate.of(2024, 04, 26), LocalTime.of(00, 00), rhcp);		
+		Evento evento3 = new Evento(LocalDate.of(2024, 04, 26), LocalTime.of(00, 00), rhcp);
+		Evento evento4 = new Evento(LocalDate.of(2024, 04, 26), LocalTime.of(00, 00), polyphia);
 		
 		palco1.adicionaEvento(evento1);
 		palco2.adicionaEvento(evento2);
 		palco1.adicionaEvento(evento3);
+		palco2.adicionaEvento(evento4);
 					
 		shows.add(palco1);
 		shows.add(palco2);
